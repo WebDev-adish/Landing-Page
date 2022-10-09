@@ -88,3 +88,64 @@
 .section5button:hover{
     cursor: pointer;
 }
+.section6{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10% 5% 5% 70% 10%;
+    grid-template-areas: "headingsection6 headingsection6 headingsection6 headingsection6"
+    "dashsection6 dashsection6 dashsection6 dashsection6"
+    "parasection6 parasection6 parasection6 parasection6"
+    "div1section6 div2section6 div3section6 div4section6"
+    "buttonsection6 buttonsection6 buttonsection6 buttonsection6";
+    gap: 20px;
+    background-color: #f6f7f9;
+}
+
+.section6heading{
+    grid-area: headingsection6;
+    text-align: center;
+}
+.section6dash{
+    grid-area: dashsection6;
+    place-self: center;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+.section6para{
+    margin: auto;
+    grid-area: parasection6;
+}
+
+#section6divsid{
+    place-self: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+.section6div1{
+    margin-left: 30px;
+    grid-area: div1section6;
+}
+.section6div2{
+    grid-area: div2section6;
+}
+.section6div3{
+    grid-area: div3section6;
+}
+.section6div4{
+    margin-right: 30px;
+    grid-area: div4section6;
+}
+.section6button{
+    grid-area: buttonsection6;
+    border-radius: 100px;
+    justify-self: center;
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    background-color:#BB1600;
+    border-color: transparent;
+}
+.section6button:hover{
+    cursor: pointer;
+}
