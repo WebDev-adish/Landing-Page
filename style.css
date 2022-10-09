@@ -6,11 +6,13 @@
     "dash dash"
     "imagesection4 textsection4";
     gap: 30px;
+    width: 100%;
     background-color: #f6f7f9;
 }
 .section4heading{
     grid-area: headingsection4;
     text-align: center;
+    font-size: xx-large;
 }
 .section4dash{
     grid-area: dash;
@@ -26,9 +28,9 @@
 }
 .section4text{
     grid-area: textsection4;
-    width: 342px;
-    height: 190px;
-    font-family: Roboto;
+    
+    text-align: start;
+    font-family: sans-serif;
 }
 .section4button{
     border-radius: 100px;
@@ -36,7 +38,53 @@
     height: 45px;
     color: #fff;
     background-color:#BB1600;
+    border-color: transparent;
 }
 .section4button:hover{
+    cursor: pointer;
+}
+.section5{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 5% 85%;
+    grid-template-areas: "headingsection5 none"
+    "dashsection5 none"
+    "textsection5 imagesection5";
+    gap: 30px;
+    background-color: white;
+}
+.section5heading{
+    grid-area: headingsection5;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+.section5headingspan{
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.section5dash{
+    grid-area: dashsection5;
+    place-self: center end;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+.section5image{
+    grid-area: imagesection5;   
+}
+.section5text{
+    grid-area: textsection5;
+    text-align: end;
+    font-family: sans-serif;
+}
+.section5button{
+    border-radius: 100px;
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    background-color:#BB1600;
+    border-color: transparent;
+}
+.section5button:hover{
     cursor: pointer;
 }
