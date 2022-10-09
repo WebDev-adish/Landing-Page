@@ -1,0 +1,42 @@
+.section4{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 10% 5% 85%;
+    grid-template-areas: "headingsection4 headingsection4"
+    "dash dash"
+    "imagesection4 textsection4";
+    gap: 30px;
+    background-color: #f6f7f9;
+}
+.section4heading{
+    grid-area: headingsection4;
+    text-align: center;
+}
+.section4dash{
+    grid-area: dash;
+    place-self: center;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+.section4image{
+    grid-area: imagesection4;
+    padding-top: 30px;
+
+}
+.section4text{
+    grid-area: textsection4;
+    width: 342px;
+    height: 190px;
+    font-family: Roboto;
+}
+.section4button{
+    border-radius: 100px;
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    background-color:#BB1600;
+}
+.section4button:hover{
+    cursor: pointer;
+}
