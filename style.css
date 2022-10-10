@@ -1,7 +1,10 @@
+*{
+    font-family: sans-serif;
+}
 .section4{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 10% 5% 85%;
+    grid-template-rows: auto;
     grid-template-areas: "headingsection4 headingsection4"
     "dash dash"
     "imagesection4 textsection4";
@@ -45,11 +48,11 @@
 }
 .section5{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 5% 85%;
-    grid-template-areas: "headingsection5 none"
-    "dashsection5 none"
-    "textsection5 imagesection5";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". headingsection5 none"
+    ". dashsection5 none"
+    ". textsection5 imagesection5";
     gap: 30px;
     background-color: white;
 }
@@ -91,13 +94,15 @@
 .section6{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 10% 5% 5% 70% 10%;
+    grid-template-rows: auto;
     grid-template-areas: "headingsection6 headingsection6 headingsection6 headingsection6"
     "dashsection6 dashsection6 dashsection6 dashsection6"
     "parasection6 parasection6 parasection6 parasection6"
     "div1section6 div2section6 div3section6 div4section6"
-    "buttonsection6 buttonsection6 buttonsection6 buttonsection6";
+    "buttonsection6 buttonsection6 buttonsection6 buttonsection6"
+    ". . . .";
     gap: 20px;
+    width: 100%;
     background-color: #f6f7f9;
 }
 
@@ -118,6 +123,8 @@
 }
 
 #section6divsid{
+    height: minmax(150px auto);
+    width: minmax(150px auto);
     place-self: center;
     text-align: center;
     font-family: sans-serif;
@@ -148,4 +155,116 @@
 }
 .section6button:hover{
     cursor: pointer;
+}
+.footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". . . . . ."
+    ". headingfooter1 headingfooter2 headingfooter3 headingfooter4 ."
+    ". footerdash1 footerdash2 footerdash3 footerdash4 ."
+    ". footerdiv1 a1 a5 a8 ."
+    ". footerdiv1 a2 a6 a9 ."
+    ". footerdiv1 a3 a7 . ."
+    ". footerdiv1 a4 . . ."
+    ". sociamedialink sociamedialink . . ."
+    ". . . . . .";
+    grid-gap: 30px 5px;
+    width: 100%;
+    background-color: #333;
+}
+.dashfooter1{
+    grid-area: footerdash1;
+    place-self: start;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+.dashfooter2{
+    grid-area: footerdash2;
+    place-self: start;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+.dashfooter3{
+    grid-area: footerdash3;
+    place-self: start;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+.dashfooter4{
+    grid-area: footerdash4;
+    place-self: start;
+    width: 70px;
+    height: 3px;
+    background-color: #BB1600;
+}
+
+.footerheading1{
+    grid-area: headingfooter1;
+    color: white;
+}
+.footerheading2{
+    grid-area: headingfooter2;
+    color: white;
+}
+.footerheading3{
+    grid-area: headingfooter3;
+    color: white;
+}
+.footerheading4{
+    grid-area: headingfooter4;
+    color: white;
+}
+.div1footer{
+    grid-area: footerdiv1;
+    color: white;
+    max-width: 400px;
+}
+#footerlinks{
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+#footerlinks:hover{
+    cursor: pointer;
+    border-bottom: 0.1px solid white;
+    transition: 2s ease 0.1s;
+}
+.a1{
+    grid-area:a1;
+}
+.a2{
+    grid-area:a2;
+}
+.a3{
+    grid-area:a3;
+}
+.a4{
+    grid-area:a4;
+}
+.a5{
+    grid-area:a5;
+}
+.a6{
+    grid-area:a6;
+}
+.a7{
+    grid-area:a7;
+}
+.a8{
+    grid-area:a8;
+}
+.a9{
+    grid-area:a9;
+}
+.socialmedia{
+    grid-area: sociamedialink;
+}
+#links{
+    margin-right: 10px;
 }
